@@ -1,0 +1,13 @@
+.btns{
+ margin: 10px;
+}
+.buttons{
+    gap: 20px;
+margin: 100px 0;
+}
+.btn{
+    background-color: coral !important;
+    width: inherit;
+    border: 1px solid;
+    outline: 0;
+}

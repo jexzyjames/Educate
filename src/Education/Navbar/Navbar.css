@@ -1,0 +1,44 @@
+a{
+    color: white !important;
+    cursor: pointer;
+}
+
+.dark-nav{
+    background:#3aaf9f !important;
+    transition:0.3s;
+}
+.contain{
+    background:transparent;
+}
+.hide{
+    right: 0;
+}
+.ul{
+    right: 0px;
+}
+.menu-icon{
+    display: none;
+}
+@media (max-width:900px) {
+    .contain{
+        position: absolute;
+        right: 0;
+
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+    }
+    
+    .hide{        
+        right:0;
+    }
+    a{
+        display: block !important;
+    }
+    .ul{
+        right: -200px ;
+        display: block;
+    }
+    
+}

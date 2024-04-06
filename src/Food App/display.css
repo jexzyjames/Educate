@@ -1,0 +1,42 @@
+.clicks, .click{
+    display: flex;
+    background: azure;
+    width: 65px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    gap: 7px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    text-align:center;
+    /* margin: 40px auto; */
+
+}
+/* .item{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    cursor: pointer;
+    background: azure;
+    text-align:center;
+    width:100%;
+
+} */
+.click{
+    /* width: 50px; */
+    font-size: 20px;
+}
+.clicks button,
+.click span{
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    background: none;
+    border: 0;
+    position: relative;
+    outline: 0;
+    font-weight: 800;
+}

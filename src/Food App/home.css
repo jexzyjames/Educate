@@ -1,0 +1,250 @@
+.logo h1 {
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.design {
+  padding: 10px 10%;
+  width: 100%;
+  position: relative;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  background: coral;
+  z-index: 12;
+  top: 0;
+  animation: fadeIn 1s ease;
+  transition: 0.3s;
+  padding: 10px 10%;
+  width: 100%;
+}
+header li {
+  display: inline-block;
+  margin: 10px;
+}
+header li a {
+  text-decoration: none;
+  color: black;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.children {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  padding: 5px 15px;
+  background: transparent;
+  outline: 0;
+  border: 1px solid;
+  border-radius: 30px;
+}
+main {
+  margin: 40px auto;
+  animation: fadeIn 1s ease;
+  transition: 0.3s;
+  width: 100%;
+  position: relative;
+}
+.food {
+  border-radius: 10px;
+  background: coral;
+  background-size: cover;
+  margin: auto;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease;
+  transition: 0.3s;
+  position: relative;
+  padding: 4rem;
+}
+.food h1 {
+  text-align: left;
+  color: #fff;
+  font-weight: 900;
+  margin: 40px auto;
+  font-size: 50px;
+}
+.food p {
+  color: #fff;
+  color: navy;
+  font-weight: 800;
+  font-size: 20px;
+  text-align: left;
+  width: 400px;
+  line-height: 1.5;
+  /* background-color: #eaeaea; */
+  padding: 10px;
+  position: relative;
+  margin: 20px 0;
+}
+.menu {
+  display: none;
+}
+.food button {
+  background: #fff;
+  border: 0;
+  font-weight: 800;
+}
+.products {
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  animation: fadeIn 1s ease;
+  transition: 0.3s;
+  margin: 20px 0;
+
+}
+
+.products-wrapper {
+  margin: 40px auto;
+  animation: delay  ease ;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+@keyframes delay {
+  0%{
+    margin-top: -40px;
+    opacity: 0;
+  }
+  100%{
+    margin-top:  40px;
+    opacity: 1;
+}
+}
+.items{
+  display: flex;
+  background: #eaeaea;
+  height: 100px;
+  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: flex;
+  flex-direction: column;
+}
+.produce{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.clicks,
+.click {
+  display: flex;
+  background: azure;
+  width: 90px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  gap: 20px;
+  position: relative;
+  animation: fadeIn 1s ease;
+  transition: 0.3s;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  /* margin: 40px auto; */
+}
+.click {
+  /* width: 50px; */
+  font-size: 20px;
+}
+.clicks button,
+.click span {
+  cursor: pointer;
+  color: black;
+  animation: fadeIn 1s ease;
+  transition: 0.3s;
+  font-size: 20px;
+  background: none;
+  border: 0;
+  position: relative;
+  outline: 0;
+  font-weight: 800;
+}
+
+.container{
+  display: grid;
+  flex-direction: column;
+  place-self: center;
+  place-items: center;
+  position: absolute;
+  /* left: 0; */
+  /* right: 0; */
+  background: #00000090;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+}
+.menus{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+.menus::-webkit-scrollbar{
+  display: none;
+}
+.menu-item img{
+  width: 7.5vw;
+  min-width: 80px;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius:100%;
+}
+.menu-item img:hover{
+transform: scale(1.05);
+}
+/* .items:hover.items {
+  background: #eaeaea;
+} */
+.clicks span:nth-child(2) {
+  color: coral;
+  font-size: 20px;
+}
+.items:hover {
+  transform: scale(0.95);
+}
+
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  header {
+    padding: 10px;
+  }
+  .design {
+    padding: 10px;
+  }
+  header ul {
+    display: none;
+  }
+}
